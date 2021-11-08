@@ -1,0 +1,37 @@
+
+.bg{
+  background-color:rgba(165, 167, 165, 0.116);;
+}
+.cabecera{
+  margin-bottom: 3%;
+  background-color: rgb(253, 178, 16);
+}
+.shopping_car{
+  background-color: white;
+}
+.button_box{  
+  width: 45%;
+  height: 35px;
+  margin-right: 20%;
+}
+.card-text{
+  margin-top: 5%;
+}
+.divider{
+  margin: 1.5%;
+}
+.line{
+  margin: 2%;
+  width:45%;
+}
+.inbt{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.footer{
+  height: 200px;
+  width: 200px;
+}
+.banner{
+  height: 30vw;
+}
