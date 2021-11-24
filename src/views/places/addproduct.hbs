@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 bg-panelopc pb-5 sticky-top">
+      <div class="row mb-3">
+        <div class="d-flex justify-content-center">
+          <h1 class="">UTP</h1>
+          <a href="/links/"><h1 class="text-light">Food</h1></a>
+        </div>
+      </div>
+      <div class="row text-light">
+        <h5 class="ps-4">Restaurantes</h5><hr>
+        <div class="rest_op  bg-opc">
+          <ul class="list-group list-group-flush">
+            <div class="opc ps-5 mb-2"><a href="/links/add/restaurants">Añadir restaurante</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/remove/restaurants">Eliminar restaurante</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/addproduct/restaurants">Añadir producto</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/removeproduct1/restaurants">Eliminar producto</a></div>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-light">
+        <h5 class="ps-4">Super mercados</h5><hr>
+        <div class="rest_op  bg-opc">
+          <ul class="list-group list-group-flush">
+            <div class="opc ps-5 mb-2"><a href="/links/add/markets">Añadir mercado</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/remove/markets">Eliminar mercado</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/addproduct/markets">Añadir producto</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/removeproduct1/markets">Eliminar producto</a></div>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-light">
+        <h5 class="ps-4">Farmacias</h5><hr>
+        <div class="rest_op  bg-opc">
+          <ul class="list-group list-group-flush">
+            <div class="opc ps-5 mb-2"><a href="/links/add/pharmacies">Añadir farmacia</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/remove/pharmacies">Eliminar farmacia</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/addproduct/pharmacies">Añadir producto</a></div>
+            <div class="opc ps-5 mb-2"><a href="/links/removeproduct1/pharmacies">Eliminar producto</a></div>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <a href="/links/signup" class="m-4"><h5>Log-out</h5></a>
+      </div>
+    </div>
+    <div class="col-9 p-5 pt-3">
+      <div class="formplace bg-light border shadow pt-5 pb-5">
+        <form action="/links/addproduct" method="post">
+          <div class="mb-2">
+            <label for="username">Nombre del producto *</label>
+            <input type="text" class="form-control" id="username" name = "name" required autofocus>
+          </div>
+          <div class="mb-2">
+            <label for="username">Descripcion *</label>
+            <input type="text" class="form-control" id="username" style="height: 100px;" name = "description">
+          </div>
+          <div class="d-flex">
+            <div class="price">
+              <label for="price">Precio *</label>
+              <div class="input-group mb-3">
+                <div class="d-flex">
+                  <span class="input-group-text" >$</span>
+                  <input type="float" class="form-control" aria-label="Amount (to the nearest dollar)" style ="max-width: 200px;" id="price" name = "price" value="1.0"  required>
+                </div>
+              </div>
+            </div>
+            <div class="place ms-5">
+              <label for="price">Lugar *</label>
+              <select class="form-select" aria-label="Default select example" name= "lugar" required>
+                {{#each lugar}}
+                <option value="{{id}}">{{name}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+          <label for="">Foto *</label>
+          <div class="drop-area">
+            <h5 class="text-muted" id="Arrastra">Arrastra y suelta tu imagen</h5>
+            <h6 class="text-muted">O</h6>
+            <button type="button">selecciona tu archivo</button>
+            <input type="file" id="input-file" name = "url-image" hidden multiple>
+          </div>
+          <div id="preview">
+
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button type = "submit" class="btn btn-success">Añadir producto</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

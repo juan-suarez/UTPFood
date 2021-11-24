@@ -1,0 +1,90 @@
+
+<nav class="navbar navbar-light fixed-top">
+    <a class="navbar-brand" href="trypage2.html">
+        <img src="/imagenes/logo.png" alt="" style="max-height: 50px;">
+    </a>
+</nav>
+<div id="particles-js">
+    <div class=" signup">
+        <div class="row">
+            <a class="text-center sp" href="javascript:pasarsignup()" id="spinsp">
+                <h2 class="text-danger">Sign-up</h2>    
+            </a>
+            <a class=" text-center lsp" href="javascript:pasarlogin()" id="lginsp">
+                <h2 class="text-danger">Login</h2>    
+            </a>
+        </div>
+        <div class="row formulogin" id="logeoinsp">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 order-md-1">
+                <form class="needs-validation" action="/links/login" method="post">
+                    <br>
+                    <div class="mb-3">
+                        <label for="username">Usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" name="user" required autofocus>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                tu nombre de usuario es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">contraseña <span class="text-muted"></span></label>
+                        <input type="password" class="form-control" id="email" placeholder="password" name = "password">
+                        <div class="invalid-feedback">
+                            digita una contraseña valida.
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-danger btn-lg btn-block" type="submit">Ingresa</button>
+                </form>
+            </div>
+        </div>
+        <div class="row formulario" id="speoinsp">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 order-md-1">
+                <form class="needs-validation" action="/links/signup" method="post">
+                    <br>
+                    <div class="card text-white bg-success mb-3 {{hide}}" style="max-width: 18rem;">
+                        <div class="card-header">{{msg}}</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username">Usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" name ="user" required autofocus>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                su usuario es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email <span class="text-muted"></span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" name = "email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Contraseña <span class="text-muted"></span></label>
+                        <input type="password" class="form-control" id="email" placeholder="password" name="password">
+                        <div class="invalid-feedback">
+                            por favor ingrese una contraseña valida.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email"> Confirmar contraseña <span class="text-muted"></span></label>
+                        <input type="password" class="form-control" id="email" placeholder="password" name="confirmpassword">
+                        <div class="invalid-feedback">
+                            las contraseñas no coinciden.
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-danger btn-lg btn-block" type="submit">Crear cuenta</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>
