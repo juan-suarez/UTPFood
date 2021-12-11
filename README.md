@@ -11,7 +11,7 @@ Para nuestro back-end nos basamos completamente en el siguiente video: https://w
 
 ## requisitos
 
-nuestra base de datos es MYSQL la cual podemos instalar por medio de consola o descargando algun entorno con interfaz que nos facilite el uso:
+Nuestra base de datos es MYSQL la cual podemos instalar por medio de consola o descargando algun entorno con interfaz que nos facilite el uso:
 * Workbench : https://www.mysql.com/products/workbench/ 
 * Mediante consola : 
 ```bash 
